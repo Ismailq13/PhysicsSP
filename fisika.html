@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physics Solved Problem</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-    <h1>Welcome to The Physics</h1>
-    <p>Selamat datang! Ini saya buat untuk mengupload soal dan pembahasannya</p>
+    <h1>Belajar Pemecahan Masalah Fisika</h1>
+    <p></p>
     <ul>
-        <li><a href="mekklas.html">Mekanika KLasik</a></li>
+        <li><a href="cabang/mekklas.html">Mekanika KLasik</a></li>
 
-        <li>Matematika</li>
+        <li>Fisika Matematika</li>
 
         <li>Listrik Magnet</li>
 
@@ -25,5 +28,62 @@
 <!--komen lh ya
 aaaa-->
     </ul>   
-</body>
+    <h3>Dasar Langkah-langkah Menyelesaikan Soal Fisika</h3>
+    <h4>Contoh</h4>
+    <p>
+        Sebuah benda bermassa 2 kg bergerak dengan percepatan 3 m/s². Tentukan gaya total yang bekerja! <br> </p>
+    <h4>1. Pahami Soalnya dengan Teliti</h4>
+    <ul>
+        <li>Baca pelan-pelan</li>
+        <li>Catat apa yang diketahui</li>
+        <li>Catat apa yang ditanya</li>
+        <li>Kalau perlu, gambar situasinya</li>
+    </ul>
+    <p>
+    Diketahui: <br>
+        m = 2 kg <br>
+        a = 3 m/s² <br>
+    Ditanya: <br>
+        F = ?</p>
+        <h4>2. Gambarkan Skema / Diagram (kalau perlu)</h4>
+          <svg width="200" height="120">
+            <!-- Kotak -->
+            <rect x="80" y="80" width="40" height="40" stroke="black" stroke-width="2" fill="lightgrey"/>
+            
+            <!-- Panah horizontal ke kanan -->
+            <line x1="120" y1="100" x2="170" y2="100" stroke="red" stroke-width="3" marker-end="url(#arrow)"/>
+            
+            <!-- Definisi marker panah -->
+            <defs>
+              <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <path d="M0,0 L0,10 L10,5 z" fill="red" />
+              </marker>
+            </defs>
+            
+            <!-- Label gaya -->
+            <text x="130" y="90" font-size="14">F</text>
+          </svg>
+          
+        <h4>3. Pahami Konsep dan Tulis Rumus Umum yang Berlaku</h4>
+        <p>Ambil rumus sesuai konsep yang dipakai di soal. <br>
+
+            Contoh:
+            Soal percepatan → hukum Newton II
+            $$F=m×a$$</p>
+        <h4>4. Substitusi Nilai Diketahui</h4>
+        <p>$$F=2×3=6 N$$</p>
+        <p>Masukkan nilai yang sudah dicatat ke dalam rumus.
+
+            $$F=2×3=6 N$$</p>
+        <h4>5. Periksa Satuan</h4>
+        <p>Pastikan hasil akhir sudah dalam satuan yang diminta soal. <br>
+
+            Di sini:
+            $$F=6 N$$</p>
+        <h4>6. Tulis Jawaban Akhir dengan Benar</h4>
+        <p>Tulis hasil akhir dengan satuan dan kalau perlu beri pernyataan. <br>
+
+            Jawab:
+            Gaya total yang bekerja sebesar <b>6 N</b>.</p>
+    </body>
 </html>
